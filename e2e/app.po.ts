@@ -1,11 +1,31 @@
 import { browser, by, element } from 'protractor';
 
-export class IeDemoPage {
-  navigateTo() {
-    return browser.get('/');
-  }
+export class IeCodeChallengePage {
+    navigateTo() {
+        return browser.get('/');
+    }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
-  }
+    getMap() {
+        return element(by.id('map'));
+    }
+
+    getStartInput() {
+        return element(by.id('start'));
+    }
+
+    getEndInput() {
+        return element(by.id('end'));
+    }
+
+    getDirectionsDialog() {
+        return element(by.id('directions-dialog'));
+    }
+
+    getFormSubmit() {
+        return element(by.id('directions-form-submit-1'));
+    }
+
+    getDirectionsForm() {
+        return element(by.className('directions-form'));
+    }
 }

@@ -1,14 +1,20 @@
-import { IeDemoPage } from './app.po';
+import { IeCodeChallengePage } from './app.po';
+import { browser, by } from 'protractor';
 
-describe('ie-demo App', () => {
-  let page: IeDemoPage;
+describe('ie-code-challenge App', () => {
+  let page: IeCodeChallengePage;
 
   beforeEach(() => {
-    page = new IeDemoPage();
+    page = new IeCodeChallengePage();
   });
 
-  it('should display welcome message', () => {
+  it('should have a map div', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getMap().isDisplayed()).toBeTruthy();
+  });
+
+  it('should have a directions dialog div', () => {
+    page.navigateTo();
+    expect(page.getDirectionsDialog().isDisplayed()).toBeTruthy();
   });
 });

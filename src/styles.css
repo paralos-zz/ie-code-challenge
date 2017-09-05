@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html,
+body,
+app-root,
+#map,
+#overlay {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-family: Roboto, sans-serif;
+}
+
+#map {
+    width: auto;
+}
+
+#overlay {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.md-input {
+    width: 100%;
+    font-size: 14px!important;
+}
+
+.md-input * {
+    color: #FFF!important;
+}
+
+.md-input button {}
+
+.md-input .mat-form-field-underline,
+.md-input .mat-form-field-ripple {
+    background: #FFF!important;
+}
+
+.mat-form-field-prefix .mat-icon-button,
+.mat-form-field-suffix .mat-icon-button {
+    height: 2em;
+    width: 2em;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.mat-focused .mat-form-field-prefix .mat-icon-button,
+.mat-focused .mat-form-field-suffix .mat-icon-button {
+    opacity: .7;
+}
+
+.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field-invalid .mat-form-field-ripple {
+    background-color: #f44336!important;
+}
+
+.mat-input-placeholder {
+    font-weight: 300!important;
+    font-size: 14px!important;
+    opacity: .7;
+}
+
+.md-input input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #4286f4 inset;
+    color: rgb(255, 255, 255)!important;
+    -webkit-text-fill-color: #FFF!important;
+}
+
+.mat-form-field-infix {
+    border-top: none!important;
+}
+
+.ok-columns {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.ok-col {
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+}

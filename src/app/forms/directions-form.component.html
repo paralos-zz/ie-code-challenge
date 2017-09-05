@@ -1,0 +1,11 @@
+<p class="form-hint">Enter your starting point and destination.</p>
+<form class="directions-form" #directionsForm="ngForm" (ngSubmit)="onSubmit()">
+    <md-form-field class="md-input" floatPlaceholder="never">
+        <input mdInput placeholder="Enter the starting point." required id="start" name="start" (change)="onSubmit()" [(ngModel)]="start">
+        <button tabindex="-1" md-icon-button id="directions-form-submit-1" mdSuffix>GO</button>
+    </md-form-field>
+    <md-form-field class="md-input" floatPlaceholder="never">
+        <input mdInput placeholder="Enter the destination." required id="end" name="end" (change)="onSubmit()" [(ngModel)]="end">
+        <button md-icon-button mdSuffix id="directions-form-submit-2">GO</button>
+    </md-form-field>
+</form>

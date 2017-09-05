@@ -1,0 +1,44 @@
+#logo-container {
+    width: 150px;
+    background: #FFF;
+    transition: all 300ms linear;
+    img {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        display: block;
+        transition: all 300ms linear;
+        padding: 12px;
+    }
+}
+
+#directions-container {
+    padding: 20px;
+}
+
+#directions-dialog {
+    background: #4286f4;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, .4);
+    padding: 0;
+    color: #FFF!important;
+    float: left;
+    overflow: hidden;
+}
+
+#directions-scroller {
+    overflow: auto;
+    height: inherit;
+}
+
+#directions-panel-wrapper {
+    padding: 0 16px 60px;
+}
+
+#directions-list-wrapper {
+    background: #d8d8d8;
+    background: -moz-linear-gradient(top, #d8d8d8 0%, #ffffff 10%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #d8d8d8 0%, #ffffff 10%, #ffffff 100%);
+    background: linear-gradient(to bottom, #d8d8d8 0%, #ffffff 10%, #ffffff 100%);
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
